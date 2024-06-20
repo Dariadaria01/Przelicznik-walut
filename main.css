@@ -1,4 +1,6 @@
 .tekst {
   border: 2px solid black;
   padding: 20px;
+  width: fit-content;
+  margin-left: 40px;
 }

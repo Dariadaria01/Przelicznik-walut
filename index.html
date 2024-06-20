@@ -10,8 +10,19 @@
 </head>
 
 <body>
-    <string class="tekst">Przelicznik walut</string>
-    <button id="currency"></button>
+    <h1 class="tekst">Przelicznik walut</h1>
+    <form id="form">
+        <input type="number" required min="0.01" step="0.01" name="amount">
+        <select name="currency">
+            <option value="EUR" selected>EUR</option>
+            <option value="USD">USD</option>
+            <option value="CHF">CHF</option>
+
+        </select>
+        <button type="submit">Przelicz</button>
+        <p><span id="result">0</span> PLN</p>
+        <p id="error"></p>
+    </form>
     <script src="index.js" type="module"></script>
 </body>
 
