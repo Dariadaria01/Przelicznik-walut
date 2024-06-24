@@ -2,5 +2,21 @@
   border: 2px solid black;
   padding: 20px;
   width: fit-content;
-  margin-left: 40px;
+}
+.box {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: transparent;
+}
+.wynik {
+  position: relative;
+  margin-left: 360px;
+  bottom: 75px;
+  font-size: 30px;
+}
+
+.line {
+  border: 1px solid black;
+  width: 25%;
+  margin-left: 0px;
 }
