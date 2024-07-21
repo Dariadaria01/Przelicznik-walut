@@ -17,12 +17,12 @@ form.addEventListener('submit', (event) => {
     .then((data) => {
       const rate = data?.rates?.[0]?.mid;
       if (!rate) {
-        errorLabel.textContent = 'błąd';
+        errorLabel.textContent = 'Mamy chwilowy problem. Spróbuj później';
         return;
       }
       result.textContent = (amount * rate).toFixed(2);
     })
     .catch(() => {
-      errorLabel.textContent = 'błąd';
+      errorLabel.textContent = 'Wystąpił błąd. Spróbuj później';
     });
 });
